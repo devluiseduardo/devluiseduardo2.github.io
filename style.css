@@ -1,0 +1,210 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 px;
+  background-color: #f7f7f7;
+  display: grid;
+  gap: 60px;
+  justify-items: center;
+  margin-top: 60px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+a,
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.header {
+  display: grid;
+  justify-items: center;
+  gap: 4rem;
+}
+
+.menu {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.menu a {
+  background-color: #fff;
+  padding: 15px 30px;
+  color: #000000;
+  border-radius: 4px;
+  border: 3px solid transparent;
+}
+
+.menu a:hover {
+  border: 3px solid #e21;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 850px;
+}
+
+.layout1 {
+  display: grid;
+  padding: 40px;
+  background-color: #fff;
+  text-align: right;
+  position: relative;
+  align-content: center;
+  gap: 20px;
+  justify-items: end;
+}
+
+.detalhe {
+  width: 60px;
+  height: 4px;
+  background-color: #e21;
+  position: absolute;
+  top: 30px;
+  right: -30px;
+}
+
+.botao {
+  background-color: red;
+  padding: 15px 30px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.botao:hover {
+  background-color: #900;
+}
+
+.img img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.section3 {
+  align-self: center;
+}
+
+.layout3 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.2);
+  text-align: right;
+  padding: 40px 10px;
+  background-image: url("./img/onda.svg");
+}
+
+.vantagens4 {
+  background-color: #fff;
+  padding: 35px;
+}
+
+.vantagens-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 15px;
+}
+
+.vantagens4 section:nth-child(odd) {
+  background-color: #f7f7f7;
+}
+
+.vantagens-item p {
+  grid-column: 2;
+}
+
+.vantagens4 section {
+  padding: 10px 15px;
+}
+
+.vantagens4 section:hover {
+  border-left: 5px solid red;
+}
+
+.rodape {
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1000px) {
+  body {
+    margin-top: 20px;
+    gap: 20px;
+  }
+  .header {
+    gap: 2rem;
+  }
+  .menu {
+    gap: 50px 15px;
+  }
+  .layout1 {
+    padding: 20px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .botao {
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+  .detalhe {
+    width: 30px;
+    top: 15px;
+    right: -15px;
+    height: 3px;
+  }
+  .layout3 {
+    font-size: 2.7rem;
+  }
+  .vantagens4 {
+    padding: 20px 20px;
+  }
+  .section3,
+  .vantagens4 {
+    grid-column: 1/3;
+  }
+  .layout3 {
+    text-align: center;
+  }
+  .section3 {
+    padding: 0px;
+    text-align: left;
+  }
+  .vantagens-item p {
+    grid-column: 1/3;
+  }
+  .rodape {
+    font-size: 0.7rem;
+    padding: 10px;
+  }
+}
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
